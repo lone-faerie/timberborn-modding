@@ -7,5 +7,5 @@ ScriptedImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-  script: {fileID: -1829411045, guid: 8f5ad4fb83e2f9941b93bfc30c4fd9ab, type: 3}
-  _disableBlueprintValidation: 1
+  script: {fileID: -1829411045, guid: 3c015488ef5fe3c439fea20fdbbae81c, type: 3}
+  _disableBlueprintValidation: 0
