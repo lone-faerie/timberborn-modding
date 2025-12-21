@@ -1,0 +1,34 @@
+{
+  "GoodSpec": {
+    "Id": "Bandage",
+    "BackwardCompatibleIds": [],
+    "ConsumptionEffects": [
+      {
+        "NeedId": "Injury",
+        "Points": 0.0
+      },
+      {
+        "NeedId": "Bandage",
+        "Points": 0.5
+      }
+    ],
+    "GoodType": "Box",
+    "StockpileVisualization": "Box",
+    "VisibleContainer": "Box",
+    "ContainerColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "ContainerMaterial": "",
+    "CarryingAnimation": "",
+    "Weight": 1,
+    "GoodGroupId": "Materials",
+    "GoodOrder": 9090,
+    "Icon": "Sprites/Goods/BandageIcon",
+    "ForceImport": false,
+    "DisplayNameLocKey": "Good.Bandage.DisplayName",
+    "PluralDisplayNameLocKey": "Good.Bandage.PluralDisplayName"
+  }
+}

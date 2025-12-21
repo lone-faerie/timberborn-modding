@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Better Healthcare",
+  "Version": "1.0.0.0",
+  "Id": "LoneFaerie.BetterHealthcare",
+  "MinimumGameVersion": "1.0.5.0",
+  "Description": "A mod that overhauls the injury and healing system",
+  "RequiredMods": [
+    {
+      "Id": "Harmony",
+      "MinimumVersion": "2.3.3"
+    }
+  ]
+}

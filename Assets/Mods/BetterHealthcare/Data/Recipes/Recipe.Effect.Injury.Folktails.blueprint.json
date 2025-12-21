@@ -1,0 +1,19 @@
+{
+  "RecipeSpec": {
+    "Id": "Effect.Injury.Folktails",
+    "BackwardCompatibleIds": [],
+    "DisplayLocKey": "Recipe.EffectInjury.PluralDisplayName",
+    "CycleDurationInHours": 2.0,
+    "Ingredients": [],
+    "Products": [],
+    "ProducedSciencePoints": 0,
+    "Fuel": "",
+    "CyclesFuelLasts": 0,
+    "FuelCapacity": 0,
+    "CyclesCapacity": 20,
+    "Icon": "Sprites/Effects/Injury"
+  },
+  "LockedRecipeSpec": {
+    "ScienceCost": 500
+  }
+}

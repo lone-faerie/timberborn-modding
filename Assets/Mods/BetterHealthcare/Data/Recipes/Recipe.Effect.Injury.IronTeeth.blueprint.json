@@ -1,0 +1,25 @@
+{
+  "RecipeSpec": {
+    "Id": "Effect.Injury.IronTeeth",
+    "BackwardCompatibleIds": [],
+    "DisplayLocKey": "Recipe.EffectInjury.PluralDisplayName",
+    "CycleDurationInHours": 2.0,
+    "Ingredients": [
+      {
+        "Id": "Water",
+        "Amount": 5
+      },
+      {
+        "Id": "Berries",
+        "Amount": 5
+      }
+    ],
+    "Products": [],
+    "ProducedSciencePoints": 0,
+    "Fuel": "",
+    "CyclesFuelLasts": 0,
+    "FuelCapacity": 0,
+    "CyclesCapacity": 4,
+    "Icon": "Sprites/Effects/Injury"
+  }
+}

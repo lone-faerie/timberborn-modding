@@ -1,0 +1,11 @@
+﻿ID,Text,Comment
+Building.Herbalist.Description,A place to treat injured and contaminated beavers.,"Ideally all uses of the word contaminate/contamination/contaminated and inure/injury/injured should be uniform across the project."
+Building.Medbay.DisplayName,Medbay,"Medbay is a contraction of medical bay"
+Building.Medbay.Description,Heals beavers using power and breeding technology.,Breeding should be the same as Building.BreedingPod.DisplayName
+Good.Poultice.DisplayName,Poultice,"A poultice is a natural remedy to treat wounds."
+Good.Poultice.PluralDisplayName,Poultices,"A poultice is a natural remedy to treat wounds."
+Manufactory.RecipeUnlock.CantUnlock,"Can't unlock this recipe, not enough Science Points.",Prompt when the player doesn't have enough science points to unlock a recipe.
+Manufactory.RecipeUnlock.Prompt,Are you sure you want to unlock this recipe? It costs {0} Science Points.,"{0} stands for amount. Prompt when the  player presses to unlock a recipe. Science Points must be the same as Science.SciencePoints"
+Manufactory.RecipeUnlock.Tooltip,Unlock this recipe.,Shown on a locked recipe's tooltip.
+Recipe.EffectInjury.DisplayName,Heal beaver,
+Recipe.EffectInjury.PluralDisplayName,Heal beavers,

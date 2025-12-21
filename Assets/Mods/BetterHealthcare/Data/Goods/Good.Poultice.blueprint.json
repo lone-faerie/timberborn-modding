@@ -1,0 +1,30 @@
+{
+  "GoodSpec": {
+    "Id": "Poultice",
+    "BackwardCompatibleIds": [],
+    "ConsumptionEffects": [
+      {
+        "NeedId": "BeeSting",
+        "Points": 0.2
+      }
+    ],
+    "GoodType": "Box",
+    "StockpileVisualization": "Box",
+    "VisibleContainer": "Box",
+    "ContainerColor": {
+      "r": 0.494117647,
+      "g": 0.5176471,
+      "b": 0.0784313753,
+      "a": 1.0
+    },
+    "ContainerMaterial": "",
+    "CarryingAnimation": "CarryInHands",
+    "Weight": 1,
+    "GoodGroupId": "Materials",
+    "GoodOrder": 9090,
+    "Icon": "Sprites/Goods/PoulticeIcon",
+    "ForceImport": false,
+    "DisplayNameLocKey": "Good.Poultice.DisplayName",
+    "PluralDisplayNameLocKey": "Good.Poultice.PluralDisplayName"
+  }
+}

@@ -1,0 +1,10 @@
+﻿{
+  "PunitiveNeedSpec": {
+    "Penalties": [
+      {
+        "Id": "WorkingSpeed",
+        "MultiplierDelta": -0.7
+      }
+    ]
+  }
+}

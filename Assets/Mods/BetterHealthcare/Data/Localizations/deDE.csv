@@ -1,0 +1,8 @@
+﻿ID,Text,Comment
+Building.Herbalist.Description,"Ein Ort, um verwundete und kontaminierte Biber zu heilen.","Ideally all uses of the word contaminate/contamination/contaminated and inure/injury/injured should be uniform across the project."
+Building.Medbay.DisplayName,Krankenstation,"Medbay is a contraction of medical bay"
+Building.Medbay.Description,"Benutzt Strom und Zücht-Technologie, um Biber zu heilen.",Breeding should be the same as Building.BreedingPod.DisplayName
+Good.Poultice.DisplayName,Umschlag,"A poultice is a natural remedy to treat wounds."
+Good.Poultice.PluralDisplayName,Unschläge,"A poultice is a natural remedy to treat wounds."
+Recipe.EffectInjury.DisplayName,Biber heilen,
+Recipe.EffectInjury.PluralDisplayName,Biber heilen,

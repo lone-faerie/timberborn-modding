@@ -1,0 +1,506 @@
+{
+  "BuildingSpec": {
+    "SelectionSoundName": "Herbalist",
+    "LoopingSoundName": "",
+    "BuildingCost": [
+      {
+        "Id": "Plank",
+        "Amount": 10
+      },
+      {
+        "Id": "Gear",
+        "Amount": 20
+      }
+    ],
+    "ScienceCost": 300,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": false,
+    "DrawRangeBoundsOnIt": false
+  },
+  "BuildingModelSpec": {
+    "FinishedModelName": "#Finished",
+    "UnfinishedModelName": "#Unfinished",
+    "FinishedUncoveredModelName": "",
+    "UndergroundModelName": "",
+    "ConstructionModeModel": "Finished",
+    "UndergroundModelDepth": 0
+  },
+  "TemplateSpec": {
+    "TemplateName": "Medbay.IronTeeth",
+    "BackwardCompatibleTemplateNames": [],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "Wellbeing",
+    "ToolOrder": 80,
+    "ToolShape": "Square",
+    "Layout": "Single",
+    "CustomPivot": {
+      "HasCustomPivot": false,
+      "Coordinates": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "LabeledEntitySpec": {
+    "DisplayNameLocKey": "Building.Medbay.DisplayName",
+    "DescriptionLocKey": "Building.Medbay.Description",
+    "FlavorDescriptionLocKey": "",
+    "Icon": "Buildings/Wellbeing/Herbalist/HerbalistIcon"
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 3,
+        "Y": 2,
+        "Z": 1
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "GroundOrStackable",
+          "Occupations": "Bottom, Top, Corners, Path, Middle",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "GroundOrStackable",
+          "Occupations": "Bottom, Top, Corners, Path, Middle",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "GroundOrStackable",
+          "Occupations": "Bottom, Top, Corners, Path, Middle",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "GroundOrStackable",
+          "Occupations": "Bottom, Top, Corners, Path, Middle",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "GroundOrStackable",
+          "Occupations": "Bottom, Top, Corners, Path, Middle",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "GroundOrStackable",
+          "Occupations": "Bottom, Top, Corners, Path, Middle",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": true,
+      "Coordinates": {
+        "X": 1,
+        "Y": -1,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": false
+  },
+  "TransformSlotInitializerSpec": {
+    "Slots": [
+      {
+        "SlotKeyword": "Entrance",
+        "Animation": "Sitting",
+        "Inanimate": false,
+        "RandomizeYRotation": false,
+        "WaterSlot": false
+      },
+      {
+        "SlotKeyword": "Spot",
+        "Animation": "FloatingSleeping",
+        "Inanimate": false,
+        "RandomizeYRotation": false,
+        "WaterSlot": false
+      }
+    ]
+  },
+  "BuildingAccessibleSpec": {
+    "LocalAccess": {
+      "X": 1.5,
+      "Y": 0.03047585,
+      "Z": 1.55
+    },
+    "ForceOneFinalAccess": false
+  },
+  "BlockObjectNavMeshSettingsSpec": {
+    "NoAutoWalls": false,
+    "GenerateFloorsOnStackable": true,
+    "EdgeGroups": [],
+    "UnblockedCoordinates": []
+  },
+  "ConstructionSiteProgressVisualizerSpec": {
+    "ProgressThresholds": [
+      0.0
+    ]
+  },
+  "ManufactoryInventoryVisualizerSpec": {
+    "GoodsModels": [
+      {
+        "GoodIds": [
+          "Water",
+          "Berries"
+        ],
+        "ModelName": "#MiscWater"
+      }
+    ]
+  },
+  "WorkplaceSpec": {
+    "MaxWorkers": 1,
+    "DefaultWorkers": 1,
+    "DefaultWorkerType": "Beaver",
+    "DisallowOtherWorkerTypes": false,
+    "WorkerTypeUnlockCosts": [
+      {
+        "WorkerType": "Bot",
+        "ScienceCost": 750
+      }
+    ]
+  },
+  "ManufactorySpec": {
+    "ProductionRecipeIds": [
+      "Effect.Injury.IronTeeth"
+    ]
+  },
+  "WorkshopSpec": {},
+  "EnterableSpec": {
+    "OperatingState": "Finished",
+    "LimitedCapacityFinished": false,
+    "CapacityFinished": 3,
+    "LimitedCapacityUnfinished": false,
+    "CapacityUnfinished": 0
+  },
+  "WorkplaceLightingSpec": {},
+  "SimpleManufactoryBehaviorsSpec": {},
+  "VisitableSlotManagerSpec": {},
+  "VisitableSlotRetrieverSpec": {
+    "WorkerSlotNames": [
+      "#Slot#Entrance"
+    ]
+  },
+  "VisitableSpec": {
+    "MinWorkers": 1
+  },
+  "ManufactoryEffectProducerSpec": {
+    "IdleEffects": []
+  },
+  "WorkshopWorkerHiderSpec": {},
+  "WorkshopAnimationControllerSpec": {},
+  "TransputProviderSpec": {
+    "TransputSpecs": [
+      {
+        "Coordinates": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Directions": "Bottom",
+        "ReverseRotation": false
+      },
+      {
+        "Coordinates": {
+          "X": 0,
+          "Y": 1,
+          "Z": 0
+        },
+        "Directions": "Left, Up, Bottom, Top",
+        "ReverseRotation": false
+      },
+      {
+        "Coordinates": {
+          "X": 1,
+          "Y": 1,
+          "Z": 0
+        },
+        "Directions": "Up, Bottom, Top",
+        "ReverseRotation": false
+      },
+      {
+        "Coordinates": {
+          "X": 2,
+          "Y": 1,
+          "Z": 0
+        },
+        "Directions": "Up, Right, Bottom, Top",
+        "ReverseRotation": false
+      },
+      {
+        "Coordinates": {
+          "X": 2,
+          "Y": 0,
+          "Z": 0
+        },
+        "Directions": "Bottom",
+        "ReverseRotation": false
+      }
+    ],
+    "IgnoreRotation": false
+  },
+  "Children": {
+    "#Finished": {
+      "TimbermeshSpec": {
+        "Model": "Buildings/Wellbeing/Medbay/Medbay.IronTeeth.Model"
+      },
+      "CollidersSpec": {
+        "BoxColliders": [
+          {
+            "Center": {
+              "X": 1.5,
+              "Y": 0.9468821,
+              "Z": 1.0
+            },
+            "Size": {
+              "X": 3.0,
+              "Y": 0.105,
+              "Z": 2.0
+            }
+          },
+          {
+            "Center": {
+              "X": 1.5,
+              "Y": 0.5,
+              "Z": 1.525
+            },
+            "Size": {
+              "X": 3.0,
+              "Y": 1.0,
+              "Z": 0.95
+            }
+          },
+          {
+            "Center": {
+              "X": 1.5,
+              "Y": 0.0504393,
+              "Z": 1.0
+            },
+            "Size": {
+              "X": 3.0,
+              "Y": 0.1,
+              "Z": 2.0
+            }
+          },
+          {
+            "Center": {
+              "X": 0.5,
+              "Y": 0.338807523,
+              "Z": 1.0
+            },
+            "Size": {
+              "X": 1.0,
+              "Y": 0.4,
+              "Z": 2.0
+            }
+          },
+          {
+            "Center": {
+              "X": 2.5,
+              "Y": 0.338807523,
+              "Z": 1.0
+            },
+            "Size": {
+              "X": 1.0,
+              "Y": 0.4,
+              "Z": 2.0
+            }
+          },
+          {
+            "Center": {
+              "X": 0.106140949,
+              "Y": 0.5,
+              "Z": 0.104996145
+            },
+            "Size": {
+              "X": 0.215,
+              "Y": 0.81,
+              "Z": 0.215
+            }
+          },
+          {
+            "Center": {
+              "X": 0.9003173,
+              "Y": 0.5,
+              "Z": 0.104996145
+            },
+            "Size": {
+              "X": 0.215,
+              "Y": 0.81,
+              "Z": 0.215
+            }
+          },
+          {
+            "Center": {
+              "X": 2.10030079,
+              "Y": 0.5,
+              "Z": 0.104996145
+            },
+            "Size": {
+              "X": 0.215,
+              "Y": 0.81,
+              "Z": 0.215
+            }
+          },
+          {
+            "Center": {
+              "X": 2.89130688,
+              "Y": 0.5,
+              "Z": 0.104996145
+            },
+            "Size": {
+              "X": 0.215,
+              "Y": 0.81,
+              "Z": 0.215
+            }
+          }
+        ],
+        "SphereColliders": [],
+        "CapsuleColliders": []
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionBase3x2#nested": {
+          "BlueprintPath": "ConstructionBases/ConstructionBase3x2/ConstructionBase3x2.blueprint"
+        },
+        "ConstructionStage0": {
+          "TimbermeshSpec": {
+            "Model": "Buildings/Wellbeing/Medbay/Medbay.IronTeeth.ConstructionStage0.Model"
+          },
+          "CollidersSpec": {
+            "BoxColliders": [
+              {
+                "Center": {
+                  "X": 1.5,
+                  "Y": 0.9468821,
+                  "Z": 1.0
+                },
+                "Size": {
+                  "X": 3.0,
+                  "Y": 0.105,
+                  "Z": 2.0
+                }
+              },
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": 0.132838428,
+                  "Z": 0.6
+                },
+                "Size": {
+                  "X": 0.8,
+                  "Y": 0.24,
+                  "Z": 1.2
+                }
+              },
+              {
+                "Center": {
+                  "X": 2.5,
+                  "Y": 0.1328384,
+                  "Z": 0.6
+                },
+                "Size": {
+                  "X": 0.8,
+                  "Y": 0.24,
+                  "Z": 1.2
+                }
+              },
+              {
+                "Center": {
+                  "X": 0.1061409,
+                  "Y": 0.5,
+                  "Z": 0.1049961
+                },
+                "Size": {
+                  "X": 0.215,
+                  "Y": 0.81,
+                  "Z": 0.215
+                }
+              },
+              {
+                "Center": {
+                  "X": 0.9003173,
+                  "Y": 0.5,
+                  "Z": 0.1049961
+                },
+                "Size": {
+                  "X": 0.215,
+                  "Y": 0.81,
+                  "Z": 0.215
+                }
+              },
+              {
+                "Center": {
+                  "X": 2.100301,
+                  "Y": 0.5,
+                  "Z": 0.1049961
+                },
+                "Size": {
+                  "X": 0.215,
+                  "Y": 0.81,
+                  "Z": 0.215
+                }
+              },
+              {
+                "Center": {
+                  "X": 2.891307,
+                  "Y": 0.5,
+                  "Z": 0.1049961
+                },
+                "Size": {
+                  "X": 0.215,
+                  "Y": 0.81,
+                  "Z": 0.215
+                }
+              },
+              {
+                "Center": {
+                  "X": 0.1061409,
+                  "Y": 0.5,
+                  "Z": 1.89192426
+                },
+                "Size": {
+                  "X": 0.215,
+                  "Y": 0.81,
+                  "Z": 0.215
+                }
+              },
+              {
+                "Center": {
+                  "X": 2.891307,
+                  "Y": 0.5,
+                  "Z": 1.89192426
+                },
+                "Size": {
+                  "X": 0.215,
+                  "Y": 0.81,
+                  "Z": 0.215
+                }
+              }
+            ],
+            "SphereColliders": [],
+            "CapsuleColliders": []
+          }
+        }
+      }
+    }
+  }
+}

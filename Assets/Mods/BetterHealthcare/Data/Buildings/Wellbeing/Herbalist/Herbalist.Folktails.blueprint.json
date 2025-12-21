@@ -1,0 +1,42 @@
+{
+  "ManufactorySpec": {
+    "ProductionRecipeIds#append": [
+      "Effect.Injury.Folktails"
+    ]
+  },
+  "ManufactoryEffectProducerSpec": {
+    "IdleEffects": [
+      {
+        "NeedId": "Injury",
+        "PointsPerHour": 0.015,
+        "SatisfyToMaxValue": false
+      }
+    ]
+  },
+  "ManufactoryScienceConsumerSpec": {
+    "ScienceRecipes": [
+      {
+        "RecipeId": "Effect.Injury.Folktails",
+        "ConsumedSciencePoints": 10
+      }
+    ]
+  },
+  "EnterableSpec": {
+    "OperatingState": "Finished",
+    "LimitedCapacityFinished": false,
+    "CapacityFinished": 5,
+    "LimitedCapacityUnfinished": false,
+    "CapacityUnfinished": 0
+  },
+  "VisitableSpec": {
+    "MinWorkers": 1
+  },
+  "EntererNeedSuspendingBuildingSpec": {
+    "NeedSuspender": {
+      "SuspendableNeedIds": [
+        "Sleep",
+        "Shelter"
+      ]
+    }
+  }
+}
