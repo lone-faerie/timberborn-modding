@@ -13,7 +13,7 @@ namespace Mods.BetterHealthcare.Scripts.VisitableSystem
     [Context("Game")]
     public class VisitableSystemConfigurator : Configurator
     {
-        private static readonly string PatchId = nameof(VisitableSystemConfigurator);
+        private static readonly string PatchId = typeof(VisitableSystemConfigurator).FullName;
 
         private static readonly Type[] Patches = new[]
         {

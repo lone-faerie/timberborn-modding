@@ -10,7 +10,7 @@ namespace Mods.BetterHealthcare.Scripts.WorkshopsEffects
     [Context("Game")]
     public class WorkshopsEffectsConfigurator : Configurator
     {
-        private static readonly string PatchId = nameof(WorkshopsEffectsConfigurator);
+        private static readonly string PatchId = typeof(WorkshopsEffectsConfigurator).FullName;
         private static readonly Type[] Patches = new[] {
                 typeof(WorkshopWorkerHiderPatch)
         };

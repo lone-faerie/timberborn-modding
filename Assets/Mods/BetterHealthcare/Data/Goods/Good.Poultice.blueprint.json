@@ -5,7 +5,7 @@
     "ConsumptionEffects": [
       {
         "NeedId": "BeeSting",
-        "Points": 0.2
+        "Points": 0.25
       }
     ],
     "GoodType": "Box",

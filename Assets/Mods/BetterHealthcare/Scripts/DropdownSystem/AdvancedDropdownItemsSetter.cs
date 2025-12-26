@@ -47,7 +47,7 @@ namespace Mods.BetterHealthcare.Scripts.DropdownSystem
             SetItems(advancedDropdown, advancedDropdownProvider, value => Create(
                              advancedDropdownProvider.FormatDisplayText(value),
                              advancedDropdownProvider.GetIcon(value),
-                             advancedDropdownProvider.GetTooltip(value),
+                             advancedDropdownProvider.GetTooltipGetter(value),
                              isLockedGetter: advancedDropdownProvider.GetIsLockedGetter(value)));
         }
 
@@ -65,7 +65,7 @@ namespace Mods.BetterHealthcare.Scripts.DropdownSystem
             SetItems(advancedDropdown, advancedDropdownProvider, value => CreateLocalizable(
                              advancedDropdownProvider.FormatDisplayText(value),
                              advancedDropdownProvider.GetIcon(value),
-                             advancedDropdownProvider.GetTooltip(value),
+                             advancedDropdownProvider.GetTooltipGetter(value),
                              advancedDropdownProvider.GetIsLockedGetter(value)));
         }
 
@@ -86,6 +86,11 @@ namespace Mods.BetterHealthcare.Scripts.DropdownSystem
         private AdvancedDropdownElement CreateLocalizable(string value, Sprite icon, VisualElement tooltip, Func<bool> isLockedGetter = null)
         {
             return Create(_loc.T(value), icon, tooltip, isLockedGetter: isLockedGetter);
+        }
+        
+        private AdvancedDropdownElement CreateLocalizable(string value, Sprite icon, Func<TooltipContent> tooltipGetter, Func<bool> isLockedGetter = null)
+        {
+            return Create(_loc.T(value), icon, tooltipGetter, isLockedGetter: isLockedGetter);
         }
 
         private AdvancedDropdownElement Create(string text, Sprite icon, string tooltip = null, string itemClass = null, Func<bool> isLockedGetter = null)
@@ -108,6 +113,17 @@ namespace Mods.BetterHealthcare.Scripts.DropdownSystem
             visualElement.sprite = icon;
             visualElement.ToggleDisplayStyle((bool) (UnityEngine.Object) icon);
             return new AdvancedDropdownElement(content, tooltip, isLockedGetter);
+        }
+
+        private AdvancedDropdownElement Create(string text, Sprite icon, Func<TooltipContent> tooltipGetter, string itemClass = null, Func<bool> isLockedGetter = null)
+        {
+            VisualElement content = CreateContent(text);
+            if (!string.IsNullOrEmpty(itemClass))
+                content.AddToClassList(itemClass);
+            Image visualElement = content.Q<Image>("Icon");
+            visualElement.sprite = icon;
+            visualElement.ToggleDisplayStyle((bool) (UnityEngine.Object) icon);
+            return new AdvancedDropdownElement(content, tooltipGetter, isLockedGetter);
         }
 
         private AdvancedDropdownElement Create(string text)

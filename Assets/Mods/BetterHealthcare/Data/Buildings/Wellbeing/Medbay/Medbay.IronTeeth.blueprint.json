@@ -51,7 +51,7 @@
     "DisplayNameLocKey": "Building.Medbay.DisplayName",
     "DescriptionLocKey": "Building.Medbay.Description",
     "FlavorDescriptionLocKey": "",
-    "Icon": "Buildings/Wellbeing/Herbalist/HerbalistIcon"
+    "Icon": "Buildings/Wellbeing/Medbay/MedbayIcon"
   },
   "BlockObjectSpec": {
     "BlocksSpec": {
@@ -162,6 +162,13 @@
           "Berries"
         ],
         "ModelName": "#MiscWater"
+      },
+      {
+        "GoodIds": [
+          "Water",
+          "Berries"
+        ],
+        "ModelName": "#MiscWater2"
       }
     ]
   },
@@ -179,6 +186,7 @@
   },
   "ManufactorySpec": {
     "ProductionRecipeIds": [
+      "Salve",
       "Effect.Injury.IronTeeth"
     ]
   },
@@ -256,6 +264,12 @@
     ],
     "IgnoreRotation": false
   },
+  "MechanicalNodeSpec": {
+    "PowerOutput": 0,
+    "PowerInput": 120,
+    "IsShaft": false
+  },
+  "MechanicalBuildingSpec": {},
   "Children": {
     "#Finished": {
       "TimbermeshSpec": {

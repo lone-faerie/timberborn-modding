@@ -29,9 +29,6 @@ namespace Mods.BetterHealthcare.Scripts.DropdownSystem
         private readonly List<AdvancedDropdownElement> _elements = new();
         private IAdvancedDropdownProvider _advancedDropdownProvider;
         private Func<string, AdvancedDropdownElement> _elementGetter;
-
-        private readonly Sprite _lockSprite;
-
         
         public event EventHandler ValueChanged;
 
@@ -40,8 +37,6 @@ namespace Mods.BetterHealthcare.Scripts.DropdownSystem
             VisualElementLoader visualElementLoader = StaticVisualElementLoader.Get();
             visualElementLoader.LoadVisualTreeAsset("Core/AdvancedDropdown").CloneTree(this);
             this.Q<Label>("Label").text = _labelLocKey;
-            _lockSprite = Resources.Load<Sprite>("UI/Images/Game/lock-icon-yellow");
-            Debug.Log($"_lockSprite is null? {_lockSprite}");
         }
         
         public bool IsSet => true;
@@ -151,14 +146,10 @@ namespace Mods.BetterHealthcare.Scripts.DropdownSystem
                 string item = _advancedDropdownProvider.Items[index];
                 AdvancedDropdownElement advancedDropdownElement = _elementGetter(item);
                 advancedDropdownElement.Content.RegisterCallback<ClickEvent>(_ => SetAndUpdate(item));
-                if (advancedDropdownElement.TooltipElement is not null)
-                    _tooltipRegistrar.Register(advancedDropdownElement.Content, advancedDropdownElement.TooltipElement);
-                else if (!string.IsNullOrWhiteSpace(advancedDropdownElement.Tooltip))
-                    _tooltipRegistrar.Register(advancedDropdownElement.Content, advancedDropdownElement.Tooltip);
+                _tooltipRegistrar.Register(advancedDropdownElement.Content, advancedDropdownElement.TooltipGetter);
                 if (advancedDropdownElement.IsLockedGetter())
                 {
                     advancedDropdownElement.Content.AddToClassList(LockedItemClass);
-                    // advancedDropdownElement.Content.Q<Image>("Icon").sprite = _lockSprite;
                 } else
                 {
                     advancedDropdownElement.Content.RemoveFromClassList(LockedItemClass);

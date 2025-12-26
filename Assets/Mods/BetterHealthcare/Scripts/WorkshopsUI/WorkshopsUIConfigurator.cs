@@ -12,7 +12,7 @@ namespace Mods.BetterHealthcare.Scripts.WorkshopsUI
     [Context("Game")]
     public class WorkshopsUIConfigurator : Configurator
     {
-        private static readonly string PatchId = nameof(WorkshopsUIConfigurator);
+        private static readonly string PatchId = typeof(WorkshopsUIConfigurator).FullName;
 
         private static readonly Type[] Patches = new[]
         {

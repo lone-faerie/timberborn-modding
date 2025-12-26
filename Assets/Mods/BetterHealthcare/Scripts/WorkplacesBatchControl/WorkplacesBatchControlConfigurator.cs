@@ -8,7 +8,7 @@ namespace Mods.BetterHealthcare.Scripts.WorkplacesBatchControl
     [Context("Game")]
     public class WorkplacesBatchControlConfigurator : Configurator
     {
-        private static readonly string PatchId = nameof(WorkplacesBatchControlConfigurator);
+        private static readonly string PatchId = typeof(WorkplacesBatchControlConfigurator).FullName;
         private static readonly Type[] Patches = new[] {
                 typeof(BatchControlModulePatch)
         };

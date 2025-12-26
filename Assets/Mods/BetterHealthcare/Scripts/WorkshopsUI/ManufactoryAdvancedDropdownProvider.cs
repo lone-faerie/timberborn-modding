@@ -11,6 +11,7 @@ using Timberborn.DropdownSystem;
 using Timberborn.EntitySystem;
 using Timberborn.Localization;
 using Timberborn.StatusSystemUI;
+using Timberborn.TooltipSystem;
 using Timberborn.UIFormatters;
 using Timberborn.Workshops;
 using UnityEngine;
@@ -85,19 +86,29 @@ namespace Mods.BetterHealthcare.Scripts.WorkshopsUI
 
         public string FormatDisplayText(string value) => value;
 
-        public Sprite GetIcon(string value) => GetRecipeSpec(value)?.UIIcon.Value;
+        public Sprite GetIcon(string value) => GetRecipeSpec(value)?.UIIcon?.Value;
 
         public string GetTooltipText(string value) => null;
 
-        public VisualElement GetTooltip(string value)
+        public Func<TooltipContent> GetTooltipGetter(string value)
         {
-            int unlockCost = _recipeUnlockingDialogService.GetRecipeUnlockCost(GetRecipeSpec(value));
-            if (unlockCost == 0)
-                return null;
+            if (value == NoRecipeItemLocKey)
+            {
+                return TooltipContent.CreateEmpty;
+            }
+            RecipeSpec recipeSpec = GetRecipeSpec(value);
             VisualElement e = _visualElementLoader.LoadVisualElement("Game/ScienceCostTooltip");
             e.Q<Label>("TooltipText").text = _loc.T(RecipeUnlockTooltipLocKey);
-            e.Q<Label>("ScienceCost").text = NumberFormatter.Format(unlockCost);
-            return e;
+            return () =>
+            {
+                int unlockCost = _recipeUnlockingDialogService.GetRecipeUnlockCost(recipeSpec);
+                if (unlockCost == 0)
+                {
+                    return TooltipContent.CreateEmpty();
+                }
+                e.Q<Label>("ScienceCost").text = NumberFormatter.Format(unlockCost);
+                return TooltipContent.CreateInstant(() => e);
+            };
         }
 
         public Func<bool> GetIsLockedGetter(string value)

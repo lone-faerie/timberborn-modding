@@ -1,0 +1,36 @@
+{
+  "GoodSpec": {
+    "Id": "Salve",
+    "BackwardCompatibleIds": [
+      "Bandage"
+    ],
+    "ConsumptionEffects": [
+      {
+        "NeedId": "Injury",
+        "Points": 0.01
+      },
+      {
+        "NeedId": "Salve",
+        "Points": 0.5
+      }
+    ],
+    "GoodType": "Box",
+    "StockpileVisualization": "Box",
+    "VisibleContainer": "Box",
+    "ContainerColor": {
+      "r": 0.818867862,
+      "g": 0.762955964,
+      "b": 0.3321822,
+      "a": 1.0
+    },
+    "ContainerMaterial": "",
+    "CarryingAnimation": "CarryInHands",
+    "Weight": 1,
+    "GoodGroupId": "Materials",
+    "GoodOrder": 9090,
+    "Icon": "Sprites/Goods/SalveIcon",
+    "ForceImport": false,
+    "DisplayNameLocKey": "Good.Salve.DisplayName",
+    "PluralDisplayNameLocKey": "Good.Salve.PluralDisplayName"
+  }
+}

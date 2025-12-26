@@ -3,7 +3,7 @@
     "Id": "Effect.Injury.IronTeeth",
     "BackwardCompatibleIds": [],
     "DisplayLocKey": "Recipe.EffectInjury.PluralDisplayName",
-    "CycleDurationInHours": 2.0,
+    "CycleDurationInHours": 8.0,
     "Ingredients": [
       {
         "Id": "Water",
@@ -21,5 +21,9 @@
     "FuelCapacity": 0,
     "CyclesCapacity": 4,
     "Icon": "Sprites/Effects/Injury"
-  }
+  },
+  "LockedRecipeSpec": {
+    "ScienceCost": 500
+  },
+  "VisitorRequiredRecipeSpec": {}
 }

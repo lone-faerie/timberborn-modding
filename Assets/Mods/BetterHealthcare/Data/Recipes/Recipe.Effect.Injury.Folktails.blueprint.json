@@ -3,7 +3,7 @@
     "Id": "Effect.Injury.Folktails",
     "BackwardCompatibleIds": [],
     "DisplayLocKey": "Recipe.EffectInjury.PluralDisplayName",
-    "CycleDurationInHours": 2.0,
+    "CycleDurationInHours": 12.0,
     "Ingredients": [],
     "Products": [],
     "ProducedSciencePoints": 0,
@@ -15,5 +15,6 @@
   },
   "LockedRecipeSpec": {
     "ScienceCost": 500
-  }
+  },
+  "VisitorRequiredRecipeSpec": {}
 }

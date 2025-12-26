@@ -4,5 +4,10 @@ Building.Medbay.DisplayName,Krankenstation,"Medbay is a contraction of medical b
 Building.Medbay.Description,"Benutzt Strom und Zücht-Technologie, um Biber zu heilen.",Breeding should be the same as Building.BreedingPod.DisplayName
 Good.Poultice.DisplayName,Umschlag,"A poultice is a natural remedy to treat wounds."
 Good.Poultice.PluralDisplayName,Unschläge,"A poultice is a natural remedy to treat wounds."
+Good.Salve.DisplayName,Salbe,
+Good.Salve.PluralDisplayName,Salben,
+Manufactory.RecipeUnlock.CantUnlock,"Dieser Produktionsplan kann nicht erforscht werden; nicht genügend Wissenschaftspunkte.",Prompt when the player doesn't have enough science points to unlock a recipe.
+Manufactory.RecipeUnlock.Prompt,"Bist du sicher, dass du diesen Produktionsplan freischalten möchtest? Es kostet {0} Wissenschaftspunkte.","{0} stands for amount. Prompt when the  player presses to unlock a recipe. Science Points must be the same as Science.SciencePoints"
+Manufactory.RecipeUnlock.Tooltip,Unlock this recipe.,Shown on a locked recipe's tooltip.
 Recipe.EffectInjury.DisplayName,Biber heilen,
 Recipe.EffectInjury.PluralDisplayName,Biber heilen,

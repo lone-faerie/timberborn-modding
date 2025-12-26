@@ -1,6 +1,6 @@
 {
   "NeedSpec": {
-    "Id": "Bandage",
+    "Id": "Salve",
     "BackwardCompatibleIds": [],
     "Order": 80,
     "NeedGroupId": "BasicNeeds",
@@ -13,7 +13,7 @@
     "Effectiveness": 1.0,
     "Wastable": false,
     "HoursWarningThreshold": 0.0,
-    "DisplayNameLocKey": "Good.Bandage.PluralDisplayName",
+    "DisplayNameLocKey": "Good.Salve.PluralDisplayName",
     "FavorableWellbeing": 0,
     "UnfavorableWellbeing": 0
   },
@@ -21,6 +21,5 @@
     "OverrideNeedIds": [
       "Injury"
     ]
-  },
-  "InactiveHiddenNeedSpec": {}
+  }
 }

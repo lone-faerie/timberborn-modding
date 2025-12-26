@@ -3,7 +3,7 @@
     "Penalties": [
       {
         "Id": "WorkingSpeed",
-        "MultiplierDelta": -0.7
+        "MultiplierDelta": -0.5
       }
     ]
   }

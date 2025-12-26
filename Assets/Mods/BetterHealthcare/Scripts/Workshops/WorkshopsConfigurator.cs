@@ -8,7 +8,7 @@ namespace Mods.BetterHealthcare.Scripts.Workshops
     [Context("Game")]
     public class WorkshopsConfigurator : Configurator
     {
-        private static readonly string PatchId = nameof(WorkshopsConfigurator);
+        private static readonly string PatchId = typeof(WorkshopsConfigurator).FullName;
         private static readonly Type[] Patches = new[] {
             typeof(ManufactoryPatch)
         };

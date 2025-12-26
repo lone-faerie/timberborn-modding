@@ -1,9 +1,9 @@
 ﻿{
   "Name": "Better Healthcare",
-  "Version": "1.0.0.0",
+  "Version": "1.0.6.0",
   "Id": "LoneFaerie.BetterHealthcare",
-  "MinimumGameVersion": "1.0.5.0",
-  "Description": "A mod that overhauls the injury and healing system",
+  "MinimumGameVersion": "1.0.6.0",
+  "Description": "This mod is an overhaul to the injury and healing system in the game. It adds buildings to heal beavers quicker and goods to aid in healing.",
   "RequiredMods": [
     {
       "Id": "Harmony",
